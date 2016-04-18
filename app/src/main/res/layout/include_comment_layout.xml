@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape_top_line"
+              android:padding="10dp">
+    <ImageView
+        android:id="@+id/iv_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:onClick="btnClick"
+        android:src="@mipmap/expression"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:maxLines="4"
+        android:textSize="15sp"
+        android:hint="快来评论吧"
+        android:layout_marginRight="10dp"
+        android:textColorHint="#a4a4a4"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/shape_searchbar"/>
+
+    <TextView
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_send"
+        android:textColor="#ffffffff"
+        android:layout_gravity="top"
+        android:onClick="btnClick"
+        android:clickable="true"
+        android:text="发送"/>
+
+</LinearLayout>

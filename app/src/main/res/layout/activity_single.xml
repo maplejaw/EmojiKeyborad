@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:id="@+id/send_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true" >
+        <include layout="@layout/include_comment_layout" />
+
+        <!--  <include
+              android:id="@+id/add_tool"
+              layout="@layout/send_msg_tool"
+              android:visibility="gone" />-->
+        <com.maplejaw.library.EmoticonKeyboard
+            android:id="@+id/mEmoticonKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_above="@id/send_layout"
+        android:layout_width="match_parent"
+        android:dividerHeight="1px"
+        android:background="#ffffff"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>
